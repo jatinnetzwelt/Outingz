@@ -80,7 +80,7 @@ body {
 }
 .bankportal-Login input[type="email"], .bankportal-Login input[type="password"] {
 	color: #666666 !important;
-	border: 1px solid rgba(153,153,153,0.28) !important;
+	border: 1px solid rgba(153,153,153,0.28);
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -89,6 +89,11 @@ body {
 	letter-spacing: -0.14px !important;
 	background: #ffffff
 }
+
+ .bankportal-Login input[type="password"].ok {
+ 	border: 1px solid #048c48 !important;
+ }
+
 .Validation {
 	position: relative;
 	left: 0;
@@ -181,7 +186,11 @@ form.form-signin .col-lg-12, form.form-signin .col-md-12, form.form-signin .col-
 .correct {
 	background: url(../images/correct.png) no-repeat right 5px;
 	margin: 11px 0 !important;
-	display: none
+	display: none;
+	position:absolute;
+	top: 0 !important;
+	right: -22px !important;
+	width: 10px;	
 }
 
 @media only screen and (min-width:768px) {
@@ -224,4 +233,16 @@ body {
 	width: 440px;
 	margin: 0 auto
 }
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:767px) and (orientation:Portrait) 
+{
+	
+ .correct { right:0 !important}	
+ .emailwrong { right:0 !important}
+ .bankportal-Login input[type="email"], .bankportal-Login input[type="password"] { width:90% !important}
+ .bankportal-Login input[type="email"].fullwidth, .bankportal-Login input[type="password"].fullwidth { width:100% !important} 
+ 
 }

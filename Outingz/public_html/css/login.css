@@ -1,0 +1,227 @@
+body {
+	padding-top: 10%;
+	padding-bottom: 40px;
+	background-color: #ffffff;
+}
+.form-signin {
+	max-width: 330px;
+	padding: 34px 15px;
+	margin: 0 auto;
+	padding-bottom: 28px !important
+}
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+@font-face {
+	font-family: 'helvetica-normal';
+	src: url('../fonts/helvetica-normal.eot') format('embedded-opentype'), url('../fonts/helvetica-normal.woff') format('woff'), url('../fonts/helvetica-normal.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helvetica-neue-bold';
+	src: url('../fonts/helvetica-neue-bold.eot') format('embedded-opentype'), url('../fonts/helvetica-neue-bold.woff') format('woff'), url('../fonts/helvetica-neue-bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeue-Light';
+	src: url('../fonts/HelveticaNeue-Light.eot') format('embedded-opentype'), url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.bankportal-Login {
+	border: 1px solid rgba(153,153,153,0.33);
+	border-radius: 5.51px;
+	-moz-border-radius: 5.51px;
+	-webkit-border-radius: 5.51px;
+}
+.bankportal-Login h2 {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.loginformOuter h2 {
+	color: #2fa2c3;
+	font-size: 40px;
+	font-family: 'helvetica-neue-bold';
+	text-align: center;
+	margin-bottom: 28px;
+	margin-top: 0 !important
+}
+.loginformOuter h2 span {
+	color: #666666;
+	font-size: 18px;
+	font-family: 'HelveticaNeue-Light';
+}
+.bankportal-Login input[type="email"], .bankportal-Login input[type="password"] {
+	color: #666666 !important;
+	border: 1px solid rgba(153,153,153,0.28) !important;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 14px !important;
+	padding-left: 40px;
+	letter-spacing: -0.14px !important;
+	background: #ffffff
+}
+.Validation {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.Validation span {
+	color: #ed1f24;
+	font-size: 11px;
+	position: absolute;
+	top: 46px;
+	font-family: 'helvetica-normal';
+	font-weight: normal !important;
+}
+.bankportal-Login input[type="email"] {
+	background: url(../images/user.png) no-repeat 16px center #ffffff !important;
+	font-family: 'HelveticaNeue-Light' !important;
+}
+.bankportal-Login input[type="password"] {
+	background: url(../images/lock.png) no-repeat 16px center #ffffff !important;
+	margin: 0 !important;
+	font-family: 'HelveticaNeue-Light';
+}
+.btn-login {
+	background: #36a2c1 !important;
+	padding: 10px 26px !important;
+	text-align: center !important;
+	color: #fff;
+	font-family: 'HelveticaNeue-Light';
+	font-size: 18px;
+	padding-top: 6px !important;
+	letter-spacing: -0.18px !important;
+	margin-top: 6px;
+	border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+}
+.btn-login:hover {
+	color: #fff !important;
+	text-decoration: none !important
+}
+label.forgoReset {
+	font-size: 12px !important;
+	color: #666666 !important;
+	font-family: 'HelveticaNeue-Light';
+	width: 100%;
+	font-weight: normal !important;
+	margin-top: 15px;
+	letter-spacing: -0.12px !important
+}
+label.forgoReset a {
+	color: #36a2c1 !important;
+	text-decoration: none !important
+}
+label.forgoReset a:hover {
+	color: #36a2c1 !important;
+	text-decoration: underline !important
+}
+.bankportal-Login form .col-lg-11, .bankportal-Login form .col-md-11, .bankportal-Login form .col-sm-11, .bankportal-Login form .col-xs-11 {
+	padding: 0 !important
+}
+.form-signin .col-lg-1, .form-signin .col-md-1, .form-signin .col-sm-1, .form-signin .col-xs-1 {
+	padding: 0 !important
+}
+.inputfield .col-lg-12, .inputfield .col-md-12, .inputfield .col-sm-12, .inputfield .col-xs-12 {
+	padding: 0 !important
+}
+form.form-signin .col-lg-12, form.form-signin .col-md-12, form.form-signin .col-sm-12, form.form-signin .col-xs-12 {
+	padding: 0 !important
+}
+.inputfield .space {
+	margin-bottom: 34px !important
+}
+.emailwrong {
+	background: url(../images/wrong.png) no-repeat right 5px;
+	margin: 11px 0 !important;
+	position: absolute;
+	top: 0 !important;
+	right: -22px !important;
+	width: 10px;
+}
+.passwrodwrong {
+	background: url(../images/wrong.png) no-repeat right 5px;
+	margin: 11px 0 !important;
+	display: none;
+	position: absolute;
+	top: 0 !important;
+	right: -22px !important;
+	width: 10px;
+}
+.correct {
+	background: url(../images/correct.png) no-repeat right 5px;
+	margin: 11px 0 !important;
+	display: none
+}
+
+@media only screen and (min-width:768px) {
+.loginformOuter {
+	width: 440px;
+	margin: 0 auto;
+}
+.bankportal-Login {
+	width: 440px;
+	margin: 0 auto;
+	border: 1px solid rgba(153,153,153,0.33);
+}
+}
+.bankportal-Login input[type="email"].correct, .bankportal-Login input[type="password"].correct {
+	border: 1px solid #048c48 !important;
+	display: block !important;
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+body {
+	padding-top: 30%;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+body {
+	padding-top: 18%;
+}
+}
+
+@media only screen and (min-width:360px) and (max-width:767px) and (orientation:Landscape) {
+.bankportal-Login {
+	width: 440px;
+	margin: 0 auto
+}
+}
+
+@media only screen and (min-width:600px) and (max-width:800px) and (orientation:Portrait) {
+.bankportal-Login {
+	width: 440px;
+	margin: 0 auto
+}
+}

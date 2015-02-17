@@ -243,8 +243,6 @@ body {
 .correct { right:0 !important}	
 .emailwrong { right:0 !important}
 .passwrodwrong{ right:0 !important}
-span#invalidpassword,span#invalidusername,button.btn-login{margin-left:6% !important}
-label.forgoReset{ width:94%; margin-left:6%;}
+span#invalidpassword,span#invalidusername{margin-left:6% !important}
 .bankportal-Login input[type="email"], .bankportal-Login input[type="password"] { width:88% !important; margin-left:6% !important}
-
 }

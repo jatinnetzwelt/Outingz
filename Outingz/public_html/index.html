@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1, user-scalable=0">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
@@ -51,9 +51,10 @@
               
                 	<div class="Validation">     
                         <label for="inputEmail" class="sr-only">Email address</label>
-                        <input type="email" id="inputEmail" class="form-control fullwidth" value="Email" required autofocus>
-                       <!--- Validation Here  ---> <span style="display:none">Invalid Username</span> 
-                       <div class="emailwrong" style="display:none">&nbsp;</div><!--- Validation End  --->
+                        <input type="email" id="inputEmail" class="form-control fullwidth" placeholder="Email" required>
+                       <!--- Validation Here  ---> <span style="display:none" id="invalidusername">Invalid Username</span> 
+                       <div class="emailwrong" id="emailwrong" style="display:none">&nbsp;</div>
+                       <div class="correct" id="correct" style="display:none">&nbsp;</div><!--- Validation End  --->
 		            
             	</div>
 
@@ -68,9 +69,10 @@
 			
         		<div class="Validation">          
         				<label for="inputPassword" class="sr-only">Password</label>
-       					<input type="password" id="inputPassword" class="form-control fullwidth" value="Password" required>        
-        				<!--- Validation Here  ---><span style="display:none">Invalid Password</span>
-                        <div class="passwrodwrong" style="display:none">&nbsp;</div>  <!--- Validation End  --->
+       					<input type="password" id="inputPassword" class="form-control fullwidth" placeholder="Password" required>        
+        				<!--- Validation Here  ---><span style="display:none" id="invalidpassword">Invalid Password</span>
+                        <div class="passwrodwrong" id="passwrodwrong" style="display:none">&nbsp;</div>
+                        <div class="correct" id="correctpass" style="display:none">&nbsp;</div>  <!--- Validation End  --->
 				
 			</div>
 
@@ -78,7 +80,7 @@
 <!---  Input Password Field End --->            
 </div>
 <!---  Input Submit Button --->
-        <button class="btn btn-lg btn-login" type="submit">Login</button>
+        <button class="btn btn-lg btn-login" type="submit" onclick="javascript:return validate()">Login</button>
 <!---  Input Submit Button End --->        
 
 <!---  Forgot Link --->
@@ -96,8 +98,60 @@
     
 </section>
 
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+    function validate(){
+      var username = document.getElementById('inputEmail').value;
+      var password = document.getElementById('inputPassword').value;
+      var reg = /^[^%\s]{8,}/;
+      var reg2 = /[a-zA-Z @\-%*&]/;
+      var reg3 = /[0-9]/;
+       if(!username.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+          document.getElementById('invalidusername').style.display = "block";
+          document.getElementById('emailwrong').style.display = "block";
+          document.getElementById('correct').style.display = "none";  
+          return false;
+      }
+      else{
+        document.getElementById('invalidusername').style.display = "none";
+        document.getElementById('emailwrong').style.display = "none";
+
+        if(!reg.test(password)){
+          document.getElementById('invalidpassword').style.display = "block";
+          document.getElementById('passwrodwrong').style.display = "block";
+          document.getElementById('correctpass').style.display = "none";
+          return false;
+        }
+        if(!reg2.test(password)){
+          document.getElementById('invalidpassword').style.display = "block";
+          document.getElementById('passwrodwrong').style.display = "block";
+          document.getElementById('correctpass').style.display = "none";
+          return false;
+        }
+        if(!reg3.test(password)){
+          document.getElementById('invalidpassword').style.display = "block";
+          document.getElementById('passwrodwrong').style.display = "block";
+          document.getElementById('correctpass').style.display = "none";
+          return false;
+        }else{
+          document.getElementById('invalidpassword').style.display = "none";
+          document.getElementById('passwrodwrong').style.display = "none";
+        }
+
+      }
+      if(username == "admin@admin.com" && password == "admin@123"){
+       document.getElementById('correct').style.display = "block"; 
+       document.getElementById('correctpass').style.display = "block";
+	   document.getElementById('inputPassword').style.border = "1px solid #048c48";
+       return false;
+      }
+      else{
+        return false;
+      }
+  }
+  
+    </script>
   </body>
 </html>
